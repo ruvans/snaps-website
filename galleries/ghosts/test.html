@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <style>
+  .haunted { 
+  animation: fadeIn 5s;
+  animation-iteration-count:infinite;
+  }
+  @keyframes fadeIn {
+  0% { opacity: 0; }
+  80% { opacity: 0.5; }
+  100% { opacity: 0; }
+}
+  .hauntedpic{
+    position: relative;
+    display: inline;
+  }
+  .ghost{
+  position:absolute;
+  bottom: 0;
+  left: 0;
+  }
+
+  </style>
+  <body>
+  
+    <div class="hauntedpic">
+      <img src="image_1.JPG" width="700px">
+      <img src="badghost.png" width="700px" class="ghost haunted">
+    </div>
+
+  </body>
+</html>

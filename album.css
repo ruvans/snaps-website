@@ -1,0 +1,94 @@
+h1{
+  font-size:calc(8px + 2vw);
+  text-align:center;
+  color:#003366;
+}
+
+h2 {
+  font-size:calc(8px + 1.5vw);
+  text-align:center;
+}
+
+h3 {
+  font-size:calc(8px + 1.2vw);
+  text-align:center;
+}
+
+p {
+  font-size:calc(8px + 1vw);
+}
+
+a{
+  font-size:calc(8px +1vw);
+}
+
+
+p{
+  margin-top: 1px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 20px;
+  font-size:calc(8px + 0.55vw);
+}
+
+ body {
+  background-image: none;
+  background: rgb(43,25,39);
+  background: linear-gradient(31deg, rgba(43,25,39,1) 0%, rgba(46,33,59,1) 35%, rgba(32,48,52,1) 65%, rgba(33,56,49,1) 99%); 
+  background: linear-gradient(31deg, rgba(249,233,245,1) 0%, rgba(244,235,255,1) 35%, rgba(214,243,252,1) 65%, rgba(232,255,248,1) 99%);
+  background: linear-gradient(0deg, rgba(112,110,110,1) 0%, rgba(97,104,111,1) 35%, rgba(153,153,153,1) 65%, rgba(123,115,134,1) 99%);
+
+  margin: 5% auto;
+  font: .9em/1.2 Arial, Helvetica, sans-serif;
+  color: #b3b3cc;
+}
+
+nav {
+  border-width: none;
+  padding: 20px;
+  background-color: transparent;
+  font-size:calc(8px + 1.25vw);
+}
+
+img
+{
+    max-width: 100%;
+    height: auto;
+    border:5px;
+    border-color: #003366;
+    border-style:solid;
+}
+
+.centre {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.title-container {
+  display: grid;
+  grid-template-columns: 100px auto 100px;
+}
+
+ .photo-container {
+     position: relative;
+     max-width: 800px;
+     flex-basis: 800px;
+}
+
+.photo-text {
+     position: absolute;
+     bottom: 10px;
+     left: 7px;
+     background: rgb(0, 0, 0);
+    /* Fallback color */
+     background: rgba(0, 0, 0, 0.5);
+    /* Black background with 0.5 opacity */
+     color: #f1f1f1;
+    /* Grey text */
+     width: 30%;
+     max-width: 150px;
+     padding: 15px;
+     text-align:center;
+}

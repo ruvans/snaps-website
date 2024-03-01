@@ -1,0 +1,123 @@
+h1{
+  font-size:calc(8px + 2vw);
+  text-align:center;
+}
+
+p {
+  font-size:24px;
+  color: #2B2D42;
+}
+
+img
+{
+    max-width: 100%;
+    height: auto;
+    border:5px;
+    border-color: #EFEFEF;
+    border-style:solid;
+}
+
+.centre {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.title-container {
+  display: grid;
+  grid-template-columns: 100px auto 100px;
+}
+
+ .photo-container {
+     position: relative;
+     max-width: 800px;
+     flex-basis: 800px;
+}
+
+.photo-text {
+     position: absolute;
+     bottom: 10px;
+     left: 7px;
+     background: rgb(0, 0, 0);
+    /* Fallback color */
+     background: rgba(0, 0, 0, 0.5);
+    /* Black background with 0.5 opacity */
+     color: #f1f1f1;
+    /* Grey text */
+     width: 30%;
+     max-width: 150px;
+     padding: 15px;
+     text-align:center;
+}
+
+a {
+  color: #2B2D42;
+  font-size:32px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ /* unvisited link */
+a:link {
+  color: #2B2D42;
+}
+
+/* visited link */
+a:visited {
+  color: #2B2D42;
+}
+
+/* mouse over link */
+a:hover {
+  color: #4C86A8;
+}
+
+ .box80 {
+     width:80vw;
+     margin:0 auto 0 auto;
+     border: 30px solid transparent;
+     background:#efefef;
+}
+
+ .flex-container {
+     display: flex;
+     align-items: flex-start;
+     flex-wrap: wrap;
+}
+
+/* Container holding the image and the text */
+ .photo-container {
+     flex: 33%;
+     position: relative;
+}
+ .photo-container-h {
+     flex: 50%;
+     position: relative;
+     
+}
+ .photo-text {
+     position: absolute;
+     bottom: 10px;
+     left: 7px;
+     background: rgb(0, 0, 0);
+    /* Fallback color */
+     background: rgba(0, 0, 0, 0.5);
+    /* Black background with 0.5 opacity */
+     color: #f1f1f1;
+    /* Grey text */
+     width: 30%;
+     max-width: 150px;
+     padding: 15px;
+     text-align:center;
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 768px)  {
+  /* For mobile phones: */
+  [class*="photo-container"] {
+    flex: 100%;
+  }
+  [class*="photo-container-h"] {
+    flex: 100%;
+  }
+}

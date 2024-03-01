@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>You look after that frog; give it a proper name.</title>
+      <link href="../../style_files/mystyle_navy.css" rel="stylesheet" type="text/css" media="all">
+      <link href="../../style_files/slideshow.css" rel="stylesheet" type="text/css" media="all">
+      <script src="../../components/footer.js" type="text/javascript" defer></script>
+      <script src="../../components/nav.js"    type="text/javascript" defer></script>
+   </head>
+   <style>
+   img{
+     border:0px;
+   }
+   body {
+    background: linear-gradient(to bottom, #994d00 0%, #4d1a00 100%);
+   }
+   h1 {
+    font-size: 32px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #4d3300;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+   </style>
+   <body >
+         <script type="text/javascript" src="fallingleaves.js"></script>
+      <div class="topbox"> </div>
+      <div class="box95">
+         <div class="container">
+            <article>
+            <h1>Over the garden wall</h1>
+               <div class="slideshow-container">
+                  <!-- Full-width images with number and caption text -->
+                  <div class="mySlides fade">
+                     <div class="numbertext">1 / 3</div>
+                     <img src="image_1small.png" 
+                     alt="Describe"
+                     onclick="window.open('image_1.png', '_self');" 
+                     style="width:100%" >
+                     <div class="text">But where have we come?</div>
+                  </div>
+                  <div class="mySlides fade">
+                     <div class="numbertext">2 / 3</div>
+                     <img src="image_2small.png" 
+                     alt="Describe"
+                     onclick="window.open('image_2.png', '_self');"
+                     style="width:100%">
+                     <div class="text">and where shall we end?</div>
+                  </div>
+                  <div class="mySlides fade">
+                     <div class="numbertext">3 / 3</div>
+                     <img src="image_3small.png" 
+                     alt="Describe"
+                     onclick="window.open('image3.png', '_self');"
+                     style="width:100%">
+                     <div class="text">If dreams can't come true, then why not pretend?</div>
+                  </div>
+                  <!-- Next and previous buttons -->
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+               </div>
+               <br>
+               <!-- The dots/circles -->
+               <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span>
+                  <span class="dot" onclick="currentSlide(2)"></span>
+                  <span class="dot" onclick="currentSlide(3)"></span>
+               </div>
+            </article>
+            <nav>
+               <navigation-component></navigation-component>
+            </nav>
+            <footer>
+               <footer-component></footer-component>
+            </footer>
+         </div>
+         <!-- container -->
+      </div>
+      <!-- box95 -->
+   </body>
+   </div>
+
+   <script type="text/javascript" src="../../style_files/slideshow.js"></script>
+   
+</html>

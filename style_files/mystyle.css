@@ -1,0 +1,108 @@
+.container {
+  display: grid;
+  grid-template-areas:
+      "header header "
+      "sidebar content "
+      "sidebar footer ";
+  grid-template-columns: 1fr 7fr;
+
+}
+
+header {
+  grid-area: header;
+  border-bottom: solid;
+  text-align:center;
+  border-color: plum;
+}
+
+article {
+  grid-area: content;
+  border-style: none;
+  border-color: plum;
+}
+
+nav {
+  grid-area: sidebar;
+  border-right: solid;
+  border-color: plum;
+  padding: 4px;
+  color: plum ;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style-position: inside;
+  margin: 6px;
+  padding: 0;
+}
+
+aside {
+  grid-area: rightbar;
+  border-style: solid;
+  border-color: plum;
+}
+
+footer {
+  grid-area: footer;
+  color: MediumOrchid
+
+}
+
+img {
+  border:2px;
+  border-style: solid;
+  border-color: #003366;
+}
+
+body {
+  /*background: linear-gradient(31deg, rgba(249,233,245,1) 0%, rgba(244,235,255,1) 35%, rgba(214,243,252,1) 65%, rgba(232,255,248,1) 99%);  cute pinky bg*/
+  background: linear-gradient(31deg, rgba(43,25,39,1) 0%, rgba(46,33,59,1) 35%, rgba(32,48,52,1) 65%, rgba(33,56,49,1) 99%);
+  color: plum;
+}
+
+a:hover img {
+  border-style: solid;
+  border-color: pink;
+}
+
+.box80 {width:80vw;
+  margin:0 auto 0 auto;
+  border: 0px solid transparent;
+  background: transparent; 
+
+}
+
+.box95 {width:95vw;
+  margin:auto auto auto auto;
+  border: 2px solid;
+  border-color: plum;
+  background: transparent; 
+
+}
+
+.screenbox {
+  height: 100vh;
+}
+
+.topbox {
+  height:1vw;
+}
+
+.centre {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.photo-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.photo-row > div {
+  margin: 10px;
+  padding: 20px;
+}
+
+

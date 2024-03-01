@@ -1,0 +1,134 @@
+/*https://coolors.co/f3eaf4-d35f8f-2b2d42-e1dd8f-4c86a8*/
+
+.container {
+  display: grid;
+  grid-template-areas:
+      "header header "
+      "sidebar content "
+      "sidebar footer ";
+  grid-template-columns: 1fr 4fr;
+
+}
+
+header {
+  grid-area: header;
+  border-bottom: solid;
+  text-align:center;
+  border-color: #E5FCFF;
+}
+
+article {
+  grid-area: content;
+  border-style: none;
+  border-color: #E5FCFF;
+}
+
+nav {
+  grid-area: sidebar;
+  border-right: solid;
+  border-color: #E5FCFF;
+  padding: 4px;
+  color: #E5FCFF ;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+ul {
+  list-style: none;
+  padding-left:20px;
+}
+
+ul li::before {
+  content: "\2765";
+  color: #E1DD8F;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+aside {
+  grid-area: rightbar;
+  border-style: solid;
+  border-color: #E5FCFF;
+}
+
+footer {
+  grid-area: footer;
+  color: #4C86A8
+
+}
+
+img {
+  border:2px;
+  border-style: solid;
+  border-color: #4C86A8;
+}
+
+body {
+  background: #2B2D42;
+
+}
+
+a:hover img {
+  border-style: solid;
+  border-color: pink;
+}
+
+ /* unvisited link */
+a:link {
+  color: #E5FCFF;
+}
+
+/* visited link */
+a:visited {
+  color: #F3EAF4;
+}
+
+/* mouse over link */
+a:hover {
+  color: #D35F8F;
+}
+
+
+
+.box80 {width:80vw;
+  margin:0 auto 0 auto;
+  border: 0px solid transparent;
+  background: transparent; 
+
+}
+
+.box95 {width:95vw;
+  margin:auto auto auto auto;
+  border: 2px solid;
+  border-color: #E5FCFF;
+  background: transparent; 
+  
+}
+
+.screenbox {
+  height: 100vh;
+}
+
+.topbox {
+  height:1vw;
+}
+
+.centre {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.photo-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.photo-row > div {
+  margin: 10px;
+  padding: 20px;
+}
+
+
